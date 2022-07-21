@@ -1,0 +1,19 @@
+import java.util.Scanner;
+public class Main{
+    public static void main(String[] args) {
+        Scanner input = new Scanner(System.in);
+        
+        double kenar_bir,kenar_iki,kenar_uc;
+        System.out.println("Birinci Kenarın Uzunluğu?");
+        kenar_bir = input.nextDouble();
+        System.out.println("İkinci Kenarın Uzunluğu?");
+        kenar_iki = input.nextDouble();
+        System.out.println("Üçüncü Kenarın Uzunluğu?");
+        kenar_uc = input.nextDouble();
+        
+        double alan, u;
+        u= (kenar_uc+kenar_iki+kenar_bir)/2;
+        alan = Math.sqrt(u*(u-kenar_bir)*(u-kenar_iki)*(u-kenar_uc));
+        System.out.println(alan);
+    }
+}
