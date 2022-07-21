@@ -1,0 +1,31 @@
+import java.util.Scanner;
+class Main{
+    public static void main(String[] args){
+        int mat,fiz,kim,turkce,tarih,muzik;
+        float ort;
+        String sonuc;
+
+        Scanner input = new Scanner(System.in);
+        System.out.println("Matematik notunuz ?");
+        mat = input.nextInt();
+        
+        System.out.println("Fizik Notunuz ? ");
+        fiz = input.nextInt();
+        
+        System.out.println("Kimya Notunuz ? ");
+        kim = input.nextInt();
+        
+        System.out.println("Türkçe Notunuz ? ");
+        turkce = input.nextInt();
+        
+        System.out.println("Tarih Notunuz ? ");
+        tarih = input.nextInt();
+
+        System.out.println("Müzik Notunuz ? ");
+        muzik = input.nextInt();
+        
+        ort = (mat + fiz + kim + turkce + tarih + muzik)/6;
+        sonuc = (ort>=60) ? "Geçtiniz" : "Kaldınız";
+        System.out.println(ort + " " + sonuc);
+    }
+}
